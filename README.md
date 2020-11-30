@@ -44,11 +44,11 @@ pod 'RatingsRestrictionKit'
 
 ## Features Planned
 
-[ ] TV Show Ratings
-[ ] App Ratings
-[ ] Explicit Books Allowed
-[ ] Explicit Music Podcasts Allowed
+-   [ ] TV Show Ratings
+-   [ ] App Ratings
+-   [ ] Explicit Books Allowed
+-   [ ] Explicit Music Podcasts Allowed
 
 ## Wish List (For Those That Wish To Contribute)
 
-[ ] Support for Countries outside of US
+-   [ ] Support for Countries outside of US

@@ -1,5 +1,7 @@
 # RatingsRestrictionKit
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9791699b7b644ee6bd48f2fa84c64d34)](https://app.codacy.com/gh/kumpeapps/RatingsRestrictionKit?utm_source=github.com&utm_medium=referral&utm_content=kumpeapps/RatingsRestrictionKit&utm_campaign=Badge_Grade_Settings)
+
 ## Features
 -   Get Device's Movie Rating Restriction Setting (Raw Value or Text Value)
 -   Get the raw value of a supplied Movie Rating (currently supports US ratings ONLY)

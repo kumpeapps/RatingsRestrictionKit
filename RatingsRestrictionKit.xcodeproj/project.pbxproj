@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0FD8FCA525747EF400DE2749 /* RatingsRestrictionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD8FC9B25747EF400DE2749 /* RatingsRestrictionKit.framework */; };
-		0FD8FCAA25747EF400DE2749 /* RatingsRestrictionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8FCA925747EF400DE2749 /* RatingsRestrictionKitTests.swift */; };
-		0FD8FCAC25747EF400DE2749 /* RatingsRestrictionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD8FC9E25747EF400DE2749 /* RatingsRestrictionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FD8FCAA25747EF400DE2749 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8FCA925747EF400DE2749 /* Tests.swift */; };
+		0FD8FCC525747F5300DE2749 /* iOSRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8FCC425747F5300DE2749 /* iOSRestrictions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		0FD8FC9B25747EF400DE2749 /* RatingsRestrictionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RatingsRestrictionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FD8FC9E25747EF400DE2749 /* RatingsRestrictionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingsRestrictionKit.h; sourceTree = "<group>"; };
 		0FD8FC9F25747EF400DE2749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD8FCA425747EF400DE2749 /* RatingsRestrictionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatingsRestrictionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FD8FCA925747EF400DE2749 /* RatingsRestrictionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsRestrictionKitTests.swift; sourceTree = "<group>"; };
+		0FD8FCA925747EF400DE2749 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		0FD8FCAB25747EF400DE2749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD8FCC425747F5300DE2749 /* iOSRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSRestrictions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		0FD8FC9D25747EF400DE2749 /* RatingsRestrictionKit */ = {
 			isa = PBXGroup;
 			children = (
-				0FD8FC9E25747EF400DE2749 /* RatingsRestrictionKit.h */,
 				0FD8FC9F25747EF400DE2749 /* Info.plist */,
+				0FD8FCC425747F5300DE2749 /* iOSRestrictions.swift */,
 			);
 			path = RatingsRestrictionKit;
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 		0FD8FCA825747EF400DE2749 /* RatingsRestrictionKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				0FD8FCA925747EF400DE2749 /* RatingsRestrictionKitTests.swift */,
+				0FD8FCA925747EF400DE2749 /* Tests.swift */,
 				0FD8FCAB25747EF400DE2749 /* Info.plist */,
 			);
 			path = RatingsRestrictionKitTests;
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD8FCAC25747EF400DE2749 /* RatingsRestrictionKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +146,7 @@
 				TargetAttributes = {
 					0FD8FC9A25747EF400DE2749 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					0FD8FCA325747EF400DE2749 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD8FCC525747F5300DE2749 /* iOSRestrictions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD8FCAA25747EF400DE2749 /* RatingsRestrictionKitTests.swift in Sources */,
+				0FD8FCAA25747EF400DE2749 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +342,7 @@
 		0FD8FCB025747EF400DE2749 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2T42Z3DM34;
@@ -357,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kumpeapps.ios.RatingsRestrictionKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +368,7 @@
 		0FD8FCB125747EF400DE2749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2T42Z3DM34;
@@ -389,6 +393,7 @@
 		0FD8FCB325747EF400DE2749 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T42Z3DM34;
 				INFOPLIST_FILE = RatingsRestrictionKitTests/Info.plist;
@@ -407,6 +412,7 @@
 		0FD8FCB425747EF400DE2749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T42Z3DM34;
 				INFOPLIST_FILE = RatingsRestrictionKitTests/Info.plist;

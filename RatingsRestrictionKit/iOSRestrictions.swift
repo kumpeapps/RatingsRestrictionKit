@@ -57,9 +57,8 @@ import Foundation
     }
 
     /// True if supplied rating is allowed per device settings
-    public func ratingIsAllowed(rating: String) -> Bool {
+    public func movieRatingIsAllowed(rating: String) -> Bool {
         let ratingRawValue = getMovieRatingValue(rating: rating)
         let allowedRatingRawValue = getDeviceMovieRestrictionRaw()
         return allowedRatingRawValue >= ratingRawValue
     }
-

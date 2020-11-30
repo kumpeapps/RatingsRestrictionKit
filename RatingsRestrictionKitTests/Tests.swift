@@ -37,12 +37,12 @@ class Tests: XCTestCase {
         XCTAssertNotEqual(RatingsRestrictionKit.getMovieRatingValue(rating: "g"), 200)
     }
 
-    func testRatingIsAllowed() {
-        XCTAssertEqual(RatingsRestrictionKit.ratingIsAllowed(rating: "g"), true)
-        XCTAssertEqual(RatingsRestrictionKit.ratingIsAllowed(rating: "pg"), true)
-        XCTAssertEqual(RatingsRestrictionKit.ratingIsAllowed(rating: "pg13"), true)
-        XCTAssertEqual(RatingsRestrictionKit.ratingIsAllowed(rating: "r"), true)
-        XCTAssertEqual(RatingsRestrictionKit.ratingIsAllowed(rating: "nc17"), false)
+    func testMovieRatingIsAllowed() {
+        XCTAssertEqual(RatingsRestrictionKit.movieRatingIsAllowed(rating: "g"), true)
+        XCTAssertEqual(RatingsRestrictionKit.movieRatingIsAllowed(rating: "pg"), true)
+        XCTAssertEqual(RatingsRestrictionKit.movieRatingIsAllowed(rating: "pg13"), true)
+        XCTAssertEqual(RatingsRestrictionKit.movieRatingIsAllowed(rating: "r"), true)
+        XCTAssertEqual(RatingsRestrictionKit.movieRatingIsAllowed(rating: "nc17"), false)
     }
 
 }

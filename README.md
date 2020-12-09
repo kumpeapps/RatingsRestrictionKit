@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/RatingsRestrictionKit.svg?style=flat)](https://cocoapods.org/pods/RatingsRestrictionKit)
 [![Platform](https://img.shields.io/cocoapods/p/RatingsRestrictionKit.svg?style=flat)](https://cocoapods.org/pods/RatingsRestrictionKit)
 
+** This project has been renamed to [ContentRestrictionKit](https://github.com/kumpeapps/ContentRestrictionsKit). Please visit the [ContentRestrictionKit](https://github.com/kumpeapps/ContentRestrictionsKit) page for updated framework!**
+
 ## Features
 -   Get Device's Movie Rating Restriction Setting (Raw Value or Text Value)
 -   Get the raw value of a supplied Movie Rating (currently supports US ratings ONLY)
